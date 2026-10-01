@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://bl8lq2687siut"]
+
+[ext_resource type="Script" uid="uid://bdid0pbqfyf4g" path="res://start_screen.gd" id="1_s4vtk"]
+[ext_resource type="Script" uid="uid://cbd84rqwynva3" path="res://button.gd" id="2_d4clo"]
+
+[node name="Control" type="Control" unique_id=1102809784]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_s4vtk")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=993397680]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.964317, 0.6244416, 0.535166, 1)
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=1795382306]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer" unique_id=1565299372]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CenterContainer/VBoxContainer" unique_id=1927445422]
+layout_mode = 2
+theme_override_font_sizes/font_size = 50
+text = "Money tracker"
+
+[node name="Button" type="Button" parent="CenterContainer/VBoxContainer" unique_id=1055534415]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+text = "get started"
+script = ExtResource("2_d4clo")
